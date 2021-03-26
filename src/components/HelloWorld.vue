@@ -11,7 +11,7 @@ import axios from "axios";
 export default {
   name: 'HelloWorld',
   created () {
-    this.ZoomMtg.setZoomJSLib('https://source.zoom.us/1.9.0/lib', '/av');
+    this.ZoomMtg.setZoomJSLib('https://source.zoom.us/1.9.1/lib', '/av');
     this.ZoomMtg.preLoadWasm();
     this.ZoomMtg.prepareJssdk();
   },
