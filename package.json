@@ -11,6 +11,8 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "is-svg": "^4.2.2",
+    "postcss": "^8.2.10",
     "vue": "^2.6.12"
   },
   "devDependencies": {
