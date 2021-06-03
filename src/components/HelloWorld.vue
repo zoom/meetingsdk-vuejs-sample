@@ -14,6 +14,9 @@ export default {
     this.ZoomMtg.setZoomJSLib('https://source.zoom.us/1.9.5/lib', '/av');
     this.ZoomMtg.preLoadWasm();
     this.ZoomMtg.prepareJssdk();
+    // loads language files, also passes any error messages to the ui
+    this.ZoomMtg.i18n.load('en-US');
+    this.ZoomMtg.i18n.reload('en-US');
   },
   mounted() {
     this.ZoomMtg.inMeetingServiceListener("onUserJoin", (data) => {
