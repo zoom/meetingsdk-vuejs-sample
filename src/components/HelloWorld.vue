@@ -11,7 +11,7 @@ import axios from "axios";
 export default {
   name: 'HelloWorld',
   created () {
-    this.ZoomMtg.setZoomJSLib('https://source.zoom.us/1.9.5/lib', '/av');
+    this.ZoomMtg.setZoomJSLib('https://source.zoom.us/1.9.6/lib', '/av');
     this.ZoomMtg.preLoadWasm();
     this.ZoomMtg.prepareJssdk();
     // loads language files, also passes any error messages to the ui
