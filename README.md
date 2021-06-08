@@ -32,7 +32,7 @@ To get started, clone the repo:
    | role                   | Required, 0 to join the meeting / webinar, 1 to start the meeting. |
    | leaveUrl                   | Required, the url the user is taken to once the meeting is over. |
    | userName                   | Required, A name for the user joining / starting the meeting / webinar. |
-   | userEmail                   | Optional, the user joining / starting the meeting / webinar. |
+   | userEmail                   | Optional, the user joining / starting the meeting; Required, the user joining / starting the webinar. |
    | passWord                   | Optional, meeting password. Leave as empty string if the meeting does not require a password. |
 
    Example:
