@@ -11,9 +11,9 @@ import axios from "axios";
 export default {
   name: 'HelloWorld',
   created () {
-    this.ZoomMtg.setZoomJSLib('https://source.zoom.us/1.9.6/lib', '/av');
+    this.ZoomMtg.setZoomJSLib('https://source.zoom.us/1.9.7/lib', '/av');
     this.ZoomMtg.preLoadWasm();
-    this.ZoomMtg.prepareJssdk();
+    this.ZoomMtg.prepareWebSDK();
     // loads language files, also passes any error messages to the ui
     this.ZoomMtg.i18n.load('en-US');
     this.ZoomMtg.i18n.reload('en-US');
@@ -32,7 +32,11 @@ export default {
       role: 0,
       signatureEndpoint: "",
       userEmail: "",
-      userName: "Vue.js"
+      userName: "Vue.js",
+      // pass in the registrant's token if your meeting or webinar requires registration. More info here:
+      // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/build/meetings/join#join-registered
+      // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/build/webinars/join#join-registered-webinar
+      registrantToken: ''
     }
   },
   methods: {
@@ -64,6 +68,7 @@ export default {
             apiKey: this.apiKey,
             userEmail: this.userEmail,
             passWord: this.passWord,
+            tk: this.registrantToken,
             success: (success) => {
               console.log(success);
             },
