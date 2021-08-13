@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Zoom WebSDK Sample Vue.js 2</h1>
+    <h1>Zoom Meeting SDK Sample Vue.js 2</h1>
     <button @click="getSignature">Join Meeting</button>
   </main>
 </template>
@@ -58,7 +58,6 @@ export default {
 
       this.ZoomMtg.init({
         leaveUrl: this.leaveUrl,
-        isSupportAV: true,
         success: (success) => {
           console.log(success);
           this.ZoomMtg.join({

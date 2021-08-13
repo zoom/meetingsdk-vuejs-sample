@@ -1,32 +1,32 @@
-# Zoom Web SDK Sample Vue.js 2
+# Zoom Meeting SDK Sample Vue.js 2
 
 Use of this sample app is subject to our [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html).
 
-This repo is a [Vue.js 2](https://vuejs.org/) app generated via the [Vue CLI](https://cli.vuejs.org/) that uses the [Zoom Web SDK](https://marketplace.zoom.us/docs/sdk/native-sdks/web) to start and join Zoom meetings and webinars.
+This repo is a [Vue.js 2](https://vuejs.org/) app generated via the [Vue CLI](https://cli.vuejs.org/) that uses the [Zoom Meeting SDK](https://marketplace.zoom.us/docs/sdk/native-sdks/web) to start and join Zoom meetings and webinars.
 
 ## Installation
 
 To get started, clone the repo:
 
-`$ git clone https://github.com/zoom/websdk-sample-vuejs.git`
+`$ git clone https://github.com/zoom/meetingsdk-sample-vuejs.git`
 
 ## Setup
 
-1. Once cloned, navigate to the `websdk-sample-vuejs` directory:
+1. Once cloned, navigate to the `meetingsdk-sample-vuejs` directory:
 
-   `$ cd websdk-sample-vuejs`
+   `$ cd meetingsdk-sample-vuejs`
 
 1. Then install the dependencies:
 
    `$ yarn install`
 
-1. Open the `websdk-sample-vuejs` directory in your code editor.
+1. Open the `meetingsdk-sample-vuejs` directory in your code editor.
 
 1. Open the `src/components/HelloWorld.vue` file, and enter values for the variables:
 
    | Variable                   | Description |
    | -----------------------|-------------|
-   | signatureEndpoint          | Required, the endpoint url that returns a signature. [Get a signature endpoint here.](https://github.com/zoom/websdk-sample-signature-node.js) |
+   | signatureEndpoint          | Required, the endpoint url that returns a signature. [Get a signature endpoint here.](https://github.com/zoom/meetingsdk-sample-signature-node.js) |
    | apiKey                   | Required, your Zoom JWT App API Key. [You can get yours here](https://marketplace.zoom.us/develop/create). |
    | meetingNumber                   | The Zoom Meeting / webinar number. |
    | role                   | Required, 0 to join the meeting / webinar, 1 to start the meeting. |
@@ -58,11 +58,11 @@ To get started, clone the repo:
 
 1. Navigate to http://localhost:8080.
 
-   ![Zoom Vue.js Web SDK](https://s3.amazonaws.com/user-content.stoplight.io/19808/1615228749397)
+   ![Zoom Vue.js Meeting SDK](https://s3.amazonaws.com/user-content.stoplight.io/19808/1615228749397)
 
 1. Click "Join Meeting" to join the meeting number specified in `src/components/HelloWorld.vue`.
 
-   ![Zoom Vue.js Web SDK](https://s3.amazonaws.com/user-content.stoplight.io/19808/1615228763524)
+   ![Zoom Vue.js Meeting SDK](https://s3.amazonaws.com/user-content.stoplight.io/19808/1615228763524)
 
 ## Deployment
 
