@@ -24,6 +24,8 @@ To get started, clone the repo:
 
 1. Open the `src/components/HelloWorld.vue` file, and enter values for the variables:
 
+   **NEW:** To use the [Component View](https://marketplace.zoom.us/docs/sdk/native-sdks/web/component-view), replace `HelloWorld.vue` with `HelloWorldNew.vue`. (The `leaveUrl` is not needed).
+
    | Variable                   | Description |
    | -----------------------|-------------|
    | signatureEndpoint          | Required, the endpoint url that returns a signature. [Get a signature endpoint here.](https://github.com/zoom/meetingsdk-sample-signature-node.js) |
@@ -45,7 +47,7 @@ To get started, clone the repo:
    leaveUrl = 'http://localhost:8080'
    userName = 'Vue.js'
    userEmail = ''
-   password = ''
+   passWord = ''
    ```
 
 1. Save `HelloWorld.vue`.
