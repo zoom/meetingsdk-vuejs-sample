@@ -28,6 +28,10 @@ export default {
       signatureEndpoint: "",
       userEmail: "",
       userName: "Vue.js",
+      // pass in the registrant's token if your meeting or webinar requires registration. More info here:
+      // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/component-view/meetings#join-registered
+      // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/component-view/webinars#join-registered
+      registrantToken: ''
     }
   },
   methods: {
@@ -73,7 +77,8 @@ export default {
         meetingNumber: this.meetingNumber,
         password: this.passWord,
         userName: this.userName,
-        userEmail: this.userEmail
+        userEmail: this.userEmail,
+        tk: this.registrantToken
       })
     }
   }
