@@ -62,11 +62,11 @@ To get started, clone the repo:
 
 1. Navigate to http://localhost:8080.
 
-   ![Zoom Vue.js Meeting SDK](https://s3.amazonaws.com/user-content.stoplight.io/19808/1615228749397)
+   ![Zoom Vue.js Meeting SDK](https://camo.githubusercontent.com/925026a4772383f34de6d33d531f5dff0fd6f4107e14ccfb0d9cfd1981e6258f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f757365722d636f6e74656e742e73746f706c696768742e696f2f31393830382f31363135323238373439333937)
 
 1. Click "Join Meeting" to join the meeting number specified in `src/components/HelloWorld.vue`.
 
-   ![Zoom Vue.js Meeting SDK](https://s3.amazonaws.com/user-content.stoplight.io/19808/1615228763524)
+   ![Zoom Vue.js Meeting SDK](https://camo.githubusercontent.com/3b070c64b7277b7de0282bbe8b9f79342bd8688e8374e57f33f6f09cc03cbd80/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f757365722d636f6e74656e742e73746f706c696768742e696f2f31393830382f31363135323238373633353234)
 
 ## Deployment
 
