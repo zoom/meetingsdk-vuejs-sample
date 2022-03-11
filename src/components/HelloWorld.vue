@@ -7,25 +7,27 @@
 
 <script>
 import axios from "axios";
+import { ZoomMtg } from '@zoomus/websdk';
 
 export default {
   name: 'HelloWorld',
   created () {
-    this.ZoomMtg.setZoomJSLib('https://source.zoom.us/2.2.0/lib', '/av');
-    this.ZoomMtg.preLoadWasm();
-    this.ZoomMtg.prepareWebSDK();
+    ZoomMtg.setZoomJSLib('https://source.zoom.us/2.3.0/lib', '/av');
+    ZoomMtg.preLoadWasm();
+    ZoomMtg.prepareWebSDK();
     // loads language files, also passes any error messages to the ui
-    this.ZoomMtg.i18n.load('en-US');
-    this.ZoomMtg.i18n.reload('en-US');
+    ZoomMtg.i18n.load('en-US');
+    ZoomMtg.i18n.reload('en-US');
   },
   mounted() {
-    this.ZoomMtg.inMeetingServiceListener("onUserJoin", (data) => {
+    ZoomMtg.inMeetingServiceListener("onUserJoin", (data) => {
       console.log("inMeetingServiceListener onUserJoin", data);
     });
   },
   data () {
     return {
-      apiKey: "",
+      // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
+      sdkKey: "",
       leaveUrl: "http://localhost:8080",
       meetingNumber: "123456789",
       passWord: "",
@@ -56,15 +58,15 @@ export default {
     startMeeting(signature) {
       document.getElementById("zmmtg-root").style.display = "block";
 
-      this.ZoomMtg.init({
+      ZoomMtg.init({
         leaveUrl: this.leaveUrl,
         success: (success) => {
           console.log(success);
-          this.ZoomMtg.join({
+          ZoomMtg.join({
             meetingNumber: this.meetingNumber,
             userName: this.userName,
             signature: signature,
-            apiKey: this.apiKey,
+            sdkKey: this.sdkKey,
             userEmail: this.userEmail,
             passWord: this.passWord,
             tk: this.registrantToken,

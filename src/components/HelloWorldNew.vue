@@ -13,6 +13,7 @@
 
 <script>
 import axios from "axios";
+import ZoomMtgEmbedded from '@zoomus/websdk/embedded';
 
 export default {
   name: 'HelloWorld',
@@ -20,8 +21,9 @@ export default {
   },
   data () {
     return {
-      client: this.ZoomMtgEmbedded.createClient(),
-      apiKey: "",
+      client: ZoomMtgEmbedded.createClient(),
+      // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
+      sdkKey: "",
       meetingNumber: "123456789",
       passWord: "",
       role: 0,
@@ -72,7 +74,7 @@ export default {
       });
 
       this.client.join({
-        apiKey: this.apiKey,
+        sdkKey: this.sdkKey,
         signature: signature,
         meetingNumber: this.meetingNumber,
         password: this.passWord,
