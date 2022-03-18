@@ -18,6 +18,8 @@ To get started, clone the repo:
 
 `$ git clone https://github.com/zoom/meetingsdk-sample-vuejs.git`
 
+> To setup and run the app you will need [Yarn](https://yarnpkg.com/getting-started).
+
 ## Setup
 
 1. Once cloned, navigate to the `meetingsdk-sample-vuejs` directory:
