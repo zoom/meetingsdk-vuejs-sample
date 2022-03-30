@@ -12,7 +12,7 @@ import { ZoomMtg } from '@zoomus/websdk';
 export default {
   name: 'HelloWorld',
   created () {
-    ZoomMtg.setZoomJSLib('https://source.zoom.us/2.3.0/lib', '/av');
+    ZoomMtg.setZoomJSLib('https://source.zoom.us/2.3.5/lib', '/av');
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareWebSDK();
     // loads language files, also passes any error messages to the ui
