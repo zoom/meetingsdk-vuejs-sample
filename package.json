@@ -1,8 +1,8 @@
 {
-  "name": "meetingsdk-sample-vuejs",
+  "name": "zoom-meeting-web-app",
   "version": "2.6.0",
   "private": true,
-  "author": "Max Mansfield",
+  "author": "Jiminny",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -10,9 +10,8 @@
   },
   "dependencies": {
     "@zoomus/websdk": "^2.6.0",
-    "axios": "^0.21.2",
     "core-js": "^3.6.5",
-    "is-svg": "^4.2.2",
+    "jsrsasign": "^10.5.25",
     "postcss": "^8.2.10",
     "vue": "^2.6.12"
   },

@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <Zoom />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Zoom from "./components/Zoom.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Zoom,
+  },
+};
 </script>
 
 <style>
+body,
+html {
+  min-width: 100%;
+  background: linear-gradient(135deg, #f1458e 50%, #f0415a);
+}
 #app {
   width: 70%;
   margin: auto;
