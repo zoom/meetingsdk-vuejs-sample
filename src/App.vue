@@ -16,14 +16,14 @@ export default {
 </script>
 
 <style>
-body,
-html {
-  min-width: 100%;
+html,
+body {
+  min-width: 100% !important;
   background: linear-gradient(135deg, #f1458e 50%, #f0415a);
 }
 #app {
-  width: 70%;
-  margin: auto;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 #zmmtg-root {
