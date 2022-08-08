@@ -1,4 +1,4 @@
-# Zoom Meeting SDK Sample Vue.js 2
+# Zoom Meeting SDK Web App
 
 Use of this sample app is subject to our [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html).
 
@@ -16,21 +16,21 @@ This repo is a [Vue.js 2](https://vuejs.org/) app generated via the [Vue CLI](ht
 
 To get started, clone the repo:
 
-`$ git clone https://github.com/zoom/meetingsdk-vuejs-sample.git`
+`$ git clone https://github.com/jiminny/zoom-meeting-web-app.git`
 
 > To setup and run the app you will need [Yarn](https://yarnpkg.com/getting-started).
 
 ## Setup
 
-1. Once cloned, navigate to the `meetingsdk-vuejs-sample` directory:
+1. Once cloned, navigate to the `zoom-meeting-web-app` directory:
 
-   `$ cd meetingsdk-vuejs-sample`
+   `$ cd zoom-meeting-web-app`
 
 1. Then install the dependencies:
 
    `$ yarn install`
 
-1. Open the `meetingsdk-vuejs-sample` directory in your code editor.
+1. Open the `zoom-meeting-web-app` directory in your code editor.
 
 1. Open the `src/components/Zoom.vue` file, and enter values for the variables:
 
