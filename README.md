@@ -16,25 +16,23 @@ This repo is a [Vue.js 2](https://vuejs.org/) app generated via the [Vue CLI](ht
 
 To get started, clone the repo:
 
-`$ git clone https://github.com/zoom/meetingsdk-sample-vuejs.git`
+`$ git clone https://github.com/zoom/meetingsdk-vuejs-sample.git`
 
 > To setup and run the app you will need [Yarn](https://yarnpkg.com/getting-started).
 
 ## Setup
 
-1. Once cloned, navigate to the `meetingsdk-sample-vuejs` directory:
+1. Once cloned, navigate to the `meetingsdk-vuejs-sample` directory:
 
-   `$ cd meetingsdk-sample-vuejs`
+   `$ cd meetingsdk-vuejs-sample`
 
 1. Then install the dependencies:
 
    `$ yarn install`
 
-1. Open the `meetingsdk-sample-vuejs` directory in your code editor.
+1. Open the `meetingsdk-vuejs-sample` directory in your code editor.
 
-1. Open the `src/components/HelloWorld.vue` file, and enter values for the variables:
-
-   **NEW:** To use the [Component View](https://marketplace.zoom.us/docs/sdk/native-sdks/web/component-view), replace `HelloWorld.vue` with `HelloWorldNew.vue`. (The `leaveUrl` is not needed). Also, uncomment the Component View CSS tags and comment out the Client View CSS in `public/index.html`.
+1. Open the `src/components/Zoom.vue` file, and enter values for the variables:
 
    | Variable                   | Description |
    | -----------------------|-------------|
@@ -62,8 +60,6 @@ To get started, clone the repo:
    registrantToken = ''
    ```
 
-1. Save `HelloWorld.vue`.
-
 1. Run the app:
 
    `$ yarn serve`
@@ -75,12 +71,6 @@ To get started, clone the repo:
    ### Client View
 
    ![Zoom Meeting SDK Client View](https://marketplace.zoom.us/docs/images/sdk/msdk-web-client-view.gif)
-
-   ### Component View
-
-   ![Zoom Meeting SDK Component View](https://marketplace.zoom.us/docs/images/sdk/msdk-web-component-view.gif)
-
-   Learn more about [Gallery View requirements](https://marketplace.zoom.us/docs/sdk/overview/improve-performance) and [see more product screenshots](https://marketplace.zoom.us/docs/sdk/overview/improve-performance#sharedarraybuffer-ui-differences).
 
 ## Deployment
 
