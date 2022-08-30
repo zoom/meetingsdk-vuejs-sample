@@ -1,15 +1,23 @@
 {
   "name": "meetingsdk-sample-vuejs",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "private": true,
-  "author": "Max Mansfield",
+  "author": "Zoom Video Communications, Inc.",
+  "contributors": [
+    {
+      "name": "Max Mansfield"
+    },
+    {
+      "name": "Tommy Gaessler"
+    }
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@zoomus/websdk": "^2.6.0",
+    "@zoomus/websdk": "^2.7.0",
     "axios": "^0.21.2",
     "core-js": "^3.6.5",
     "is-svg": "^4.2.2",
