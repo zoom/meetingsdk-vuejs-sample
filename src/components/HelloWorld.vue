@@ -12,7 +12,7 @@ import { ZoomMtg } from '@zoomus/websdk';
 export default {
   name: 'HelloWorld',
   created () {
-    ZoomMtg.setZoomJSLib('https://source.zoom.us/2.9.7/lib', '/av');
+    ZoomMtg.setZoomJSLib('https://source.zoom.us/2.10.0/lib', '/av');
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareWebSDK();
     // loads language files, also passes any error messages to the ui
@@ -26,24 +26,26 @@ export default {
   },
   data () {
     return {
-      // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
+      // setup your Meeting SDK auth endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
+      authEndpoint: "",
+      // This sample app has been updated to use Meeting SDK credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
       sdkKey: "",
-      leaveUrl: "http://localhost:8080",
       meetingNumber: "123456789",
       passWord: "",
       role: 0,
-      signatureEndpoint: "",
-      userEmail: "",
       userName: "Vue.js",
+      userEmail: "",
+      leaveUrl: "http://localhost:8080",
       // pass in the registrant's token if your meeting or webinar requires registration. More info here:
       // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
       // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
-      registrantToken: ''
+      registrantToken: '',
+      zakToken: ''
     }
   },
   methods: {
     getSignature() {
-      axios.post(this.signatureEndpoint, {
+      axios.post(this.authEndpoint, {
         meetingNumber: this.meetingNumber,
         role: this.role
       })
@@ -63,13 +65,14 @@ export default {
         success: (success) => {
           console.log(success);
           ZoomMtg.join({
-            meetingNumber: this.meetingNumber,
-            userName: this.userName,
             signature: signature,
             sdkKey: this.sdkKey,
-            userEmail: this.userEmail,
+            meetingNumber: this.meetingNumber,
             passWord: this.passWord,
+            userName: this.userName,
+            userEmail: this.userEmail,
             tk: this.registrantToken,
+            zak: this.zakToken,
             success: (success) => {
               console.log(success);
             },

@@ -22,23 +22,25 @@ export default {
   data () {
     return {
       client: ZoomMtgEmbedded.createClient(),
-      // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
+      // setup your Meeting SDK auth endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
+      authEndpoint: "",
+      // This sample app has been updated to use Meeting SDK credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
       sdkKey: "",
       meetingNumber: "123456789",
       passWord: "",
       role: 0,
-      signatureEndpoint: "",
-      userEmail: "",
       userName: "Vue.js",
+      userEmail: "",
       // pass in the registrant's token if your meeting or webinar requires registration. More info here:
-      // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/component-view/meetings#join-registered
-      // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/component-view/webinars#join-registered
-      registrantToken: ''
+      // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
+      // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
+      registrantToken: '',
+      zakToken: ''
     }
   },
   methods: {
     getSignature() {
-      axios.post(this.signatureEndpoint, {
+      axios.post(this.authEndpoint, {
         meetingNumber: this.meetingNumber,
         role: this.role
       })
@@ -74,13 +76,14 @@ export default {
       });
 
       this.client.join({
-        sdkKey: this.sdkKey,
         signature: signature,
+        sdkKey: this.sdkKey,
         meetingNumber: this.meetingNumber,
         password: this.passWord,
         userName: this.userName,
         userEmail: this.userEmail,
-        tk: this.registrantToken
+        tk: this.registrantToken,
+        zak: this.zakToken
       })
     }
   }
