@@ -1605,10 +1605,10 @@
   resolved "https://registry.npmjs.org/@xtuc/long/-/long-4.2.2.tgz"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@zoomus/websdk@^2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@zoomus/websdk/-/websdk-2.10.0.tgz#c8855adaf0f472062b7948b576d43255c14b892a"
-  integrity sha512-DMqfm3DBaTwTI3JKi3fd3Hd0GRYiVy2aU3l6Spb1wdf3m7Bpqpsn2M/1QCxOARLWi25YaotLatH9IijhF0Avew==
+"@zoomus/websdk@^2.10.1":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@zoomus/websdk/-/websdk-2.10.1.tgz#00d9628bc10b31278aee4a8b80c14fc9b61bfa8c"
+  integrity sha512-uGcJxeF8XZ1A4HMKRp+WUAPC1P7pzt3F6LEWwYu5IqDHiRmxc8hzVq/9ov6TaSdxNAjvsDaN2LK1xj77iSrKTg==
   dependencies:
     lodash "^4.17.21"
     react "16.13.0"
