@@ -1,6 +1,6 @@
 {
   "name": "meetingsdk-sample-vuejs",
-  "version": "2.10.1",
+  "version": "2.11.0",
   "private": true,
   "author": "Zoom Video Communications, Inc.",
   "contributors": [
@@ -17,7 +17,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@zoomus/websdk": "^2.10.1",
+    "@zoomus/websdk": "^2.11.0",
     "axios": "^0.21.2",
     "core-js": "^3.6.5",
     "is-svg": "^4.2.2",
