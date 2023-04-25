@@ -1,4 +1,4 @@
-# Zoom Meeting SDK Sample Vue.js 2
+# Zoom Meeting SDK Vue.js sample
 
 Use of this sample app is subject to our [Terms of Use](https://explore.zoom.us/en/legal/zoom-api-license-and-tou/).
 
