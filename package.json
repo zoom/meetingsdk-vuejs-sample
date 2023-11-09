@@ -1,0 +1,27 @@
+{
+  "name": "meetingsdk-vuejs-sample",
+  "version": "2.18.0",
+  "private": true,
+  "author": "Zoom Video Communications, Inc.",
+  "contributors": [
+    {
+      "name": "Tommy Gaessler"
+    },
+    {
+      "name": "Max Mansfield"
+    }
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@zoomus/websdk": "^2.18.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  }
+}
