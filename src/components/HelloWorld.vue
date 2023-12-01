@@ -1,7 +1,7 @@
 <script setup>
 import { ZoomMtg } from '@zoomus/websdk';
 
-ZoomMtg.setZoomJSLib('https://source.zoom.us/2.18.0/lib', '/av');
+ZoomMtg.setZoomJSLib('https://source.zoom.us/2.18.2/lib', '/av');
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
 // loads language files, also passes any error messages to the ui
