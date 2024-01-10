@@ -1,5 +1,5 @@
 <script setup>
-import ZoomMtgEmbedded from '@zoomus/websdk/embedded';
+import ZoomMtgEmbedded from '@zoom/meetingsdk/embedded';
 
 var client = ZoomMtgEmbedded.createClient()
 var authEndpoint = ''
@@ -32,7 +32,7 @@ function getSignature() {
 function startMeeting(signature) {
   let meetingSDKElement = document.getElementById('meetingSDKElement');
 
-  client.init({zoomAppRoot: meetingSDKElement, language: 'en-US'}).then(() => {
+  client.init({zoomAppRoot: meetingSDKElement, language: 'en-US', patchJsMedia: true}).then(() => {
     client.join({
       signature: signature,
       sdkKey: sdkKey,
@@ -43,7 +43,7 @@ function startMeeting(signature) {
       tk: registrantToken,
       zak: zakToken
     }).then(() => {
-      console.log('joined succesfully')
+      console.log('joined successfully')
     }).catch((error) => {
       console.log(error)
     })
