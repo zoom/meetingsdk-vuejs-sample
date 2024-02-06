@@ -4,7 +4,7 @@ Use of this sample app is subject to our [Terms of Use](https://explore.zoom.us/
 
 ---
 
-**NOTE:** This sample app has been updated to use [Vue 3 since Vue will end support for Vue 2 on Dec 31, 2023](https://vuejs.org/guide/introduction.html), and [Meeting SDK app type](https://developers.zoom.us/docs/meeting-sdk/create/) credentials instead of [JWT app type](https://developers.zoom.us/docs/platform/build/jwt-app/) type credentials.
+**NOTE:** This sample app has been updated to use [Vue 3 since Vue ended support for Vue 2 on Dec 31, 2023](https://vuejs.org/guide/introduction.html).
 
 ---
 
