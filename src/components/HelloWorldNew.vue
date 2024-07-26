@@ -15,6 +15,7 @@ var zakToken = ''
 function getSignature() {
   fetch(authEndpoint, {
     method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       meetingNumber: meetingNumber,
       role: role
