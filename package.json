@@ -1,6 +1,6 @@
 {
   "name": "meetingsdk-vuejs-sample",
-  "version": "3.13.0",
+  "version": "3.13.1",
   "private": true,
   "author": "Zoom Video Communications, Inc.",
   "contributors": [
@@ -17,7 +17,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zoom/meetingsdk": "^3.13.0",
+    "@zoom/meetingsdk": "^3.13.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
