@@ -3,7 +3,6 @@ import ZoomMtgEmbedded from '@zoom/meetingsdk/embedded';
 
 var client = ZoomMtgEmbedded.createClient()
 var authEndpoint = ''
-var sdkKey = ''
 var meetingNumber = '123456789'
 var passWord = ''
 var role = 0
@@ -18,7 +17,8 @@ function getSignature() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       meetingNumber: meetingNumber,
-      role: role
+      role: role,
+      videoWebRtcMode: 1
     })
   }).then((response) => {
     return response.json()
@@ -36,7 +36,6 @@ function startMeeting(signature) {
   client.init({zoomAppRoot: meetingSDKElement, language: 'en-US', patchJsMedia: true, leaveOnPageUnload: true}).then(() => {
     client.join({
       signature: signature,
-      sdkKey: sdkKey,
       meetingNumber: meetingNumber,
       password: passWord,
       userName: userName,

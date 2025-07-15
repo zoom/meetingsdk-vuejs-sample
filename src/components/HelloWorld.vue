@@ -5,7 +5,6 @@ ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
 
 var authEndpoint = ''
-var sdkKey = ''
 var meetingNumber = '123456789'
 var passWord = ''
 var role = 0
@@ -21,7 +20,8 @@ function getSignature() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       meetingNumber: meetingNumber,
-      role: role
+      role: role,
+      videoWebRtcMode: 1,
     })
   }).then((response) => {
     return response.json()
@@ -44,7 +44,6 @@ function startMeeting(signature) {
       console.log(success);
       ZoomMtg.join({
         signature: signature,
-        sdkKey: sdkKey,
         meetingNumber: meetingNumber,
         passWord: passWord,
         userName: userName,

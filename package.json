@@ -1,6 +1,6 @@
 {
   "name": "meetingsdk-vuejs-sample",
-  "version": "3.13.1",
+  "version": "4.0.0",
   "private": true,
   "author": "Zoom Video Communications, Inc.",
   "contributors": [
@@ -17,11 +17,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zoom/meetingsdk": "^3.13.1",
-    "vue": "^3.3.4"
+    "@zoom/meetingsdk": "^4.0.0",
+    "vue": "^3.5.17"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.3.4",
-    "vite": "^4.4.9"
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^7.0.4"
+  },
+  "resolutions": {
+    "esbuild": "0.25.6"
   }
 }
