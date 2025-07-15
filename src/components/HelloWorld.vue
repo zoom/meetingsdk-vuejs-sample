@@ -20,7 +20,8 @@ function getSignature() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       meetingNumber: meetingNumber,
-      role: role
+      role: role,
+      videoWebRtcMode: 1,
     })
   }).then((response) => {
     return response.json()
