@@ -5,7 +5,6 @@ ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
 
 var authEndpoint = ''
-var sdkKey = ''
 var meetingNumber = '123456789'
 var passWord = ''
 var role = 0
@@ -44,7 +43,6 @@ function startMeeting(signature) {
       console.log(success);
       ZoomMtg.join({
         signature: signature,
-        sdkKey: sdkKey,
         meetingNumber: meetingNumber,
         passWord: passWord,
         userName: userName,
